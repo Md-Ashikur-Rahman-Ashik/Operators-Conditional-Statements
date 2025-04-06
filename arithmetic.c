@@ -2,20 +2,20 @@
 
 int main()
 {
-    int num1, num2, sum, substract, multiply, divide;
+    int num2, sum, substract, multiply;
 
-    num1 = 10;
-    num2 = 20;
+    float num1 = 12;
+    num2 = 5;
 
     sum = num1 + num2;
     substract = num1 - num2;
     multiply = num1 * num2;
-    divide = num1 / num2;
+    float divide = num1 / num2;
 
     printf("The sum is : %d\n", sum);
     printf("The difference is : %d\n", substract);
     printf("The multiplication is : %d\n", multiply);
-    printf("The division is : %d", divide);
+    printf("The division is : %.1f", divide);
 
     return 0;
 }
