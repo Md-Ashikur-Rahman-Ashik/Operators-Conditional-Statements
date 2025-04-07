@@ -25,6 +25,30 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int num;
+
+//     printf("Enter a number : ");
+//     scanf("%d", &num);
+
+//     if (num <= 1)
+//     {
+//         printf("Please enter a number starting from 2");
+//     }
+//     else if (num % 2 == 0)
+//     {
+//         printf("%d is an even number", num);
+//     }
+//     else
+//     {
+//         printf("%d is an odd number", num);
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main()
@@ -34,17 +58,17 @@ int main()
     printf("Enter a number : ");
     scanf("%d", &num);
 
-    if (num <= 1)
+    if (num < 0)
     {
-        printf("Please enter a number starting from 2");
+        printf("%d is a negative number", num);
     }
-    else if (num % 2 == 0)
+    else if (num > 0)
     {
-        printf("%d is an even number", num);
+        printf("%d is a positive number", num);
     }
     else
     {
-        printf("%d is an odd number", num);
+        printf("%d is neither a positive nor a negative number", num);
     }
     return 0;
 }
