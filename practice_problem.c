@@ -8,19 +8,43 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int num1 = 6;
+
+//     if (num1 > 5)
+//     {
+//         printf("Hi");
+//     }
+//     else if (num1 > 3)
+//     {
+//         printf("Bye");
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main()
 {
-    int num1 = 6;
+    int num;
 
-    if (num1 > 5)
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    if (num <= 1)
     {
-        printf("Hi");
+        printf("Please enter a number starting from 2");
     }
-    else if (num1 > 3)
+    else if (num % 2 == 0)
     {
-        printf("Bye");
+        printf("%d is an even number", num);
+    }
+    else
+    {
+        printf("%d is an odd number", num);
     }
     return 0;
 }
